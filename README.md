@@ -1,31 +1,27 @@
-# Android Project 5 — BitFit
+# Android Project 6 — BitFit
 
 Submitted by: Christian King
 
-**BitFit** is a daily hydration tracker. Record the amount of water you drink each day in fluid ounces, review past entries, and see a month-long intake chart and average. A sample month is added on first launch so the calendar and trends are populated for a demo.
+**BitFit** is a daily hydration tracker. Record water intake in fluid ounces, browse a monthly calendar, and review monthly averages and trends. The dashboard summarizes the month’s total intake, average per logged day, number of days logged, best day, and recent entries. A sample month is added on first launch when the database is empty.
 
 Time spent: 5
 
 ## Required Features
 
-- [x] At least one health metric is tracked based on user input
-  - Chosen metric: daily water intake, in fluid ounces
-- [x] A create-entry UI prompts users to make their daily entry
-- [x] New entries are saved in a SQLite database and displayed in the RecyclerView
-- [x] Entries persist after the app is restarted
+- [x] Uses at least two fragments: Daily Log and Dashboard
+- [x] Dashboard summarizes entered data for the current month
+- [x] Bottom navigation switches between the Daily Log and Dashboard fragments
 
 ## Optional Features
 
-- [x] Calendar view, monthly average, and daily trend chart
-- [x] Custom colors and styling
-- [ ] Orientation responsiveness
-- [ ] Daily photo feature
+- [x] Monthly intake graph and summary metrics
+- [ ] Daily notifications
 
 ## Additional Features
 
-- One entry is kept per calendar day; saving again updates that day's total.
-- Sample entries are clearly marked “demo” and only seeded when the database has no entries.
-- Amounts are validated before saving.
+- Calendar-based entry selection, with one editable entry per day
+- SQLite persistence and clearly marked sample data
+- Input validation for daily intake
 
 ## Video Walkthrough
 
@@ -33,7 +29,7 @@ Add a GIF or video walkthrough here after recording the finished app.
 
 ## Notes
 
-The project began from the Android Studio starter screen. The main implementation work was replacing the sample navigation flow with a persistent daily log and summary.
+Part 2 builds on the persistent hydration tracker from Project 5. The daily log and dashboard use the same SQLite data so saved entries and summaries stay in sync.
 
 ## License
 
